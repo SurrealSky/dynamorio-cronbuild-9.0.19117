@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\api_headers</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_drlibc_x86.asm</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_drlibc_xarch.asm_core</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_events</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_syslog</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_x86.asm_core</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\lib32\ntdll_imports.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\lib32\release\dynamorio.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\RelWithDebInfo\generate_drwrap_asm_x86.asm</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\pre_inject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\inject_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drmarker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\module_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\os.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\pre_inject_asm.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\resources.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{8DA82912-6DB4-3E81-935E-8939F47DAE5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A44D937-F65B-3B55-8BE8-DC05734BBF2A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

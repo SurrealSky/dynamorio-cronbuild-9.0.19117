@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/CMakeLists.txt
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/analysis_tool.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/analyzer.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/common/memref.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/common/trace_entry.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/common/utils.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/reader/reader.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/simulator/cache_simulator.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/simulator/cache_simulator_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/simulator/tlb_simulator_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/basic_counts_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/func_view_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/histogram_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/opcode_mix_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/reuse_distance_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/reuse_time_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tools/view_create.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tracer/drmemtrace.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/tracer/raw2trace.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/make/policies.cmake

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1914062F-7809-3751-819C-A6B8B1552BA8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>drstatecmp_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\lib32\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">drstatecmp_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">drstatecmp_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\ext\lib32\release;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);X86_32;WINDOWS;DR_HOST_X86;RC_IS_drstatecmp_static;_X86_;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\lib32\release\drstatecmp_static.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;X86_32;WINDOWS;DR_HOST_X86;RC_IS_drstatecmp_static;_X86_;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\ext\lib32\release;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\ext\lib32\release;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drstatecmp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\MyProgram\cmake-3.23.1-windows-x86_64\bin\cmake.exe -SD:/work/program/dynamorio-cronbuild-9.0.19117 -BD:/work/program/dynamorio-cronbuild-9.0.19117/build32 --check-stamp-file D:/work/program/dynamorio-cronbuild-9.0.19117/build32/ext/drstatecmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\drstatecmp.h;D:\work\program\dynamorio-cronbuild-9.0.19117\make\policies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\drstatecmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drstatecmp\drstatecmp.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /FS</AdditionalOptions>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</BufferSecurityCheck>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">4100;4127;4054;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</MultiProcessorCompilation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MaxSpeed</Optimization>
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MultiThreaded</RuntimeLibrary>
+      <StringPooling Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</StringPooling>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</SuppressStartupBanner>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</TreatWarningAsError>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Level4</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ZERO_CHECK.vcxproj">
+      <Project>{1699B210-BD8A-3D96-9963-CD0EC0DBD8E2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\api_headers.vcxproj">
+      <Project>{97B1F70A-2B76-3192-A13D-E6F2A62F473D}</Project>
+      <Name>api_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\drcontainers\drcontainers.vcxproj">
+      <Project>{3E52B743-2633-336C-A503-BF3DB039DE95}</Project>
+      <Name>drcontainers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\drmgr\drmgr_static.vcxproj">
+      <Project>{DDA91498-1390-3355-85CA-AC8DB60F1A4F}</Project>
+      <Name>drmgr_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\drreg\drreg_static.vcxproj">
+      <Project>{D69BCB5B-A044-3D3B-8C31-CE5531E2601C}</Project>
+      <Name>drreg_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\dynamorio.vcxproj">
+      <Project>{7AD17436-EB4C-32DB-A2AA-7D69BD8A31AB}</Project>
+      <Name>dynamorio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

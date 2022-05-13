@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\opnd_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\opnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\instr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instrlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\decode_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\encode_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\disassemble_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\disassemble.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\ir_utils_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\ir_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_fast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\decodelib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A44D937-F65B-3B55-8BE8-DC05734BBF2A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

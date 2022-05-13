@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7BF9C580-22E2-33FB-B886-42A05697E6E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/program/dynamorio-cronbuild-9.0.19117/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\MyProgram\cmake-3.23.1-windows-x86_64\bin\cmake.exe -SD:/work/program/dynamorio-cronbuild-9.0.19117 -BD:/work/program/dynamorio-cronbuild-9.0.19117/build64 --check-stamp-file D:/work/program/dynamorio-cronbuild-9.0.19117/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CPack.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CPackComponent.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CheckIncludeFile.cxx.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindCygwin.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindDoxygen.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindMFC.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindMsys.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindPerl.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\FindZLIB.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\MyProgram\cmake-3.23.1-windows-x86_64\share\cmake-3.23\Templates\CPackConfig.cmake.in;D:\work\program\dynamorio-cronbuild-9.0.19117\api\docs\CMake_doxyutils.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\api\docs\CMake_rundoxygen.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\CMakeFiles\3.23.1\CMakeCCompiler.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\CMakeFiles\3.23.1\CMakeSystem.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_app.h;D:\work\program\dynamorio-cronbuild-9.0.19117\make\CMake_asm.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\make\DynamoRIOConfig.cmake.in;D:\work\program\dynamorio-cronbuild-9.0.19117\make\DynamoRIOConfigVersion.cmake.in;D:\work\program\dynamorio-cronbuild-9.0.19117\make\configure.cmake.h;D:\work\program\dynamorio-cronbuild-9.0.19117\make\cpp2asm_support.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\make\policies.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\make\utils.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\make\utils_exposed.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\suite\lookup_visualstudio.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\program\dynamorio-cronbuild-9.0.19117\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ZERO_CHECK.vcxproj">
+      <Project>{8DDAC902-1195-325F-B6C2-6B3FCDD98C63}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\DRcontrol.vcxproj">
+      <Project>{1A408992-1E9B-3A65-91B0-D1E6CB8A47E4}</Project>
+      <Name>DRcontrol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\DRkill.vcxproj">
+      <Project>{BEAF01E6-3421-316D-8E45-0F8F06266459}</Project>
+      <Name>DRkill</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\DRload.vcxproj">
+      <Project>{B43990E6-B93D-3A45-9AE1-1CD6945747F2}</Project>
+      <Name>DRload</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\DRstats\DRstats.vcxproj">
+      <Project>{C956C0FA-2DCD-3CE5-9A77-F8349CA0EB85}</Project>
+      <Name>DRstats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\DRview.vcxproj">
+      <Project>{E2710782-1425-3C74-8B86-077D942D2EB8}</Project>
+      <Name>DRview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\balloon.vcxproj">
+      <Project>{0009B556-5481-376A-8FFF-838699574C20}</Project>
+      <Name>balloon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbbuf.vcxproj">
+      <Project>{E97956FD-DA75-3F61-A3CC-4904127EB2DF}</Project>
+      <Name>bbbuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbcount.vcxproj">
+      <Project>{07A7D7C8-69B8-38D5-A125-ECC6CE9E7B51}</Project>
+      <Name>bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbsize.vcxproj">
+      <Project>{4D8182B5-3C92-32F5-8A6F-5217C4D8BE22}</Project>
+      <Name>bbsize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\cbr.vcxproj">
+      <Project>{1602F1EA-5761-3E2A-A9CC-FC916924F727}</Project>
+      <Name>cbr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\cbrtrace.vcxproj">
+      <Project>{2A217154-8A55-33CB-9380-C86C50ECB414}</Project>
+      <Name>cbrtrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\client_dr_copy.vcxproj">
+      <Project>{C0E0B954-373D-3AC9-B2E8-6F77B343794C}</Project>
+      <Name>client_dr_copy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\closewnd.vcxproj">
+      <Project>{7E3D9407-972A-3AA7-ACA3-4FF8BFDA3010}</Project>
+      <Name>closewnd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\countcalls.vcxproj">
+      <Project>{BDF43661-6BE9-3509-8F18-D513CF673AF2}</Project>
+      <Name>countcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\create_process.vcxproj">
+      <Project>{8378DA75-17FE-3BFE-A17B-277BE11DE7A3}</Project>
+      <Name>create_process</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\directory_iterator.vcxproj">
+      <Project>{4CC2D382-2F49-38E6-BEFA-4754404E430B}</Project>
+      <Name>directory_iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\div.vcxproj">
+      <Project>{30E9B0BD-E65D-3222-BDAA-8A3099367E3A}</Project>
+      <Name>div</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drbbdup\drbbdup.vcxproj">
+      <Project>{52612D46-7899-3E29-9FDE-1686C6475355}</Project>
+      <Name>drbbdup</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drbbdup\drbbdup_static.vcxproj">
+      <Project>{E3992117-07B5-3952-9382-FA6823DA99D5}</Project>
+      <Name>drbbdup_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drcachesim.vcxproj">
+      <Project>{B38FCBC7-8FF9-327E-89A4-D25A40DFF213}</Project>
+      <Name>drcachesim</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drcachesim_ops.vcxproj">
+      <Project>{64CF63C8-ACF0-368A-BBAA-78315F4785DB}</Project>
+      <Name>drcachesim_ops</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\drconfig.vcxproj">
+      <Project>{9007FFB9-94B5-34A1-B141-6E45A5E99CEB}</Project>
+      <Name>drconfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\libutil\drconfiglib.vcxproj">
+      <Project>{976054B1-7240-3619-B0EE-A8BB78C6B2AE}</Project>
+      <Name>drconfiglib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drcontainers\drcontainers.vcxproj">
+      <Project>{F6FEB3DE-612D-3997-AD24-B1A6FB87527B}</Project>
+      <Name>drcontainers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcov\drcov.vcxproj">
+      <Project>{B98BDEE4-B29A-3658-9FB3-9DA1D9D385A9}</Project>
+      <Name>drcov</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcov\drcov2lcov.vcxproj">
+      <Project>{B126F0F0-9BA8-33FE-BD84-44191965F036}</Project>
+      <Name>drcov2lcov</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drcovlib\drcovlib.vcxproj">
+      <Project>{AC8D7854-6211-3DCB-A8F3-0A99660CAB26}</Project>
+      <Name>drcovlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drcovlib\drcovlib_static.vcxproj">
+      <Project>{5F16869F-6801-385F-BDD2-6313D219B198}</Project>
+      <Name>drcovlib_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcpusim\drcpusim.vcxproj">
+      <Project>{FA53103A-4E23-331D-A7ED-A7721E1CB413}</Project>
+      <Name>drcpusim</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcpusim\drcpusim_ops.vcxproj">
+      <Project>{8E79555D-72D8-3E16-B5E1-FE99659A6CB8}</Project>
+      <Name>drcpusim_ops</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drdecode.vcxproj">
+      <Project>{7BAF6489-4327-30BB-A760-455573947399}</Project>
+      <Name>drdecode</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drdisas\drdisas.vcxproj">
+      <Project>{D76E247C-82C1-33D2-998B-24ADB9DE41C5}</Project>
+      <Name>drdisas</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drearlyhelp1.vcxproj">
+      <Project>{C555178D-AE3D-3B77-95E3-A43287955715}</Project>
+      <Name>drearlyhelp1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drearlyhelp2.vcxproj">
+      <Project>{4FABCD5E-28F3-30BB-B62C-CB14F357CB62}</Project>
+      <Name>drearlyhelp2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\libutil\drfrontendlib.vcxproj">
+      <Project>{F8312764-945C-3853-BD09-9CAB290C38F8}</Project>
+      <Name>drfrontendlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\drinject.vcxproj">
+      <Project>{98B4C92B-4A39-3123-82F7-133A3B991A76}</Project>
+      <Name>drinject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drinjectlib.vcxproj">
+      <Project>{5B583A22-5A53-3E0E-862A-E43EB6158B86}</Project>
+      <Name>drinjectlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drlibc.vcxproj">
+      <Project>{14AFC6E3-CC50-3E2A-99FF-9427E2B8665F}</Project>
+      <Name>drlibc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace.vcxproj">
+      <Project>{A0F07B87-1737-3BE3-83D9-6C73197898F7}</Project>
+      <Name>drmemtrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_analyzer.vcxproj">
+      <Project>{68D5B32B-F4C9-3910-900E-8EEEADE3725A}</Project>
+      <Name>drmemtrace_analyzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_basic_counts.vcxproj">
+      <Project>{58486ADB-B8DD-3A96-B715-721E8470DF72}</Project>
+      <Name>drmemtrace_basic_counts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_func_view.vcxproj">
+      <Project>{8842A310-5619-336C-9963-5EFEA37A3C6D}</Project>
+      <Name>drmemtrace_func_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_histogram.vcxproj">
+      <Project>{2CE326FA-5DD3-3066-9BFB-C71CA068FC69}</Project>
+      <Name>drmemtrace_histogram</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_opcode_mix.vcxproj">
+      <Project>{659DDD1E-F522-3C19-9265-262DE57055CE}</Project>
+      <Name>drmemtrace_opcode_mix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_raw2trace.vcxproj">
+      <Project>{566AEC99-C07F-3118-840A-F9D9EE38D775}</Project>
+      <Name>drmemtrace_raw2trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_reuse_distance.vcxproj">
+      <Project>{63FD24C9-CCA2-3C40-BC66-BC97C92EBA5A}</Project>
+      <Name>drmemtrace_reuse_distance</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_reuse_time.vcxproj">
+      <Project>{008DC178-DD9E-3D71-9907-82EF886A6F1C}</Project>
+      <Name>drmemtrace_reuse_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_simulator.vcxproj">
+      <Project>{57F054D1-96DD-35AD-8949-1BB017E829CD}</Project>
+      <Name>drmemtrace_simulator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_static.vcxproj">
+      <Project>{5839FA2E-0913-351C-AE9D-FF99D9C439F2}</Project>
+      <Name>drmemtrace_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drmemtrace_view.vcxproj">
+      <Project>{FB742B9E-076F-33C6-A09F-84DEAF0EF530}</Project>
+      <Name>drmemtrace_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drmgr\drmgr.vcxproj">
+      <Project>{4C931F1A-F4CB-35D5-AB07-63769DCFF723}</Project>
+      <Name>drmgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drmgr\drmgr_static.vcxproj">
+      <Project>{D4C60B65-E5C4-3EB5-88C4-05CEB11120E4}</Project>
+      <Name>drmgr_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\drpreinject.vcxproj">
+      <Project>{B5FA9840-75DF-3A46-AA9F-194545F8AA1D}</Project>
+      <Name>drpreinject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\drraw2trace.vcxproj">
+      <Project>{A2339756-8161-3CAE-8E06-FDBA6968C5F2}</Project>
+      <Name>drraw2trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drreg\drreg.vcxproj">
+      <Project>{8704902E-012A-3C52-BEFA-B25111C3DFA6}</Project>
+      <Name>drreg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drreg\drreg_static.vcxproj">
+      <Project>{FD1B0AB8-EFBE-3928-BB9F-4DE95E64F18C}</Project>
+      <Name>drreg_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\drrun.vcxproj">
+      <Project>{382C4D4B-F7E4-3D6F-9E92-16137F80393A}</Project>
+      <Name>drrun</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drstatecmp\drstatecmp.vcxproj">
+      <Project>{22A13003-7A33-3E77-A902-151C09A4219F}</Project>
+      <Name>drstatecmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drstatecmp\drstatecmp_static.vcxproj">
+      <Project>{51ED10EA-0977-3D93-A3B3-0CF21F9A9D58}</Project>
+      <Name>drstatecmp_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drsyms\drsyms.vcxproj">
+      <Project>{93087BD9-45F0-3FC1-AE7D-2960BF89C349}</Project>
+      <Name>drsyms</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drsyms\drsyms_bench.vcxproj">
+      <Project>{152084B8-52AD-3317-9A1A-08659D82B406}</Project>
+      <Name>drsyms_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drsyms\drsyms_static.vcxproj">
+      <Project>{60E9807B-316F-3F7F-AFC7-268BCF2DD035}</Project>
+      <Name>drsyms_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drutil\drutil.vcxproj">
+      <Project>{896A3281-20B9-3A94-A8B7-67CEE4AC37AC}</Project>
+      <Name>drutil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drutil\drutil_static.vcxproj">
+      <Project>{89FDE315-6A19-34B2-A518-FC6E5EE1B580}</Project>
+      <Name>drutil_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drwrap\drwrap.vcxproj">
+      <Project>{0A442610-A61B-3B17-AF21-2FB3847E7CC9}</Project>
+      <Name>drwrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drwrap\drwrap_static.vcxproj">
+      <Project>{5ABD0F3D-828D-3608-91AC-5182599F24D5}</Project>
+      <Name>drwrap_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drx\drx.vcxproj">
+      <Project>{3144FCCF-AF8D-3C59-B11F-843BDF55B143}</Project>
+      <Name>drx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ext\drx\drx_static.vcxproj">
+      <Project>{756411B9-E49F-3BA6-B7A7-49AEB5B5C00C}</Project>
+      <Name>drx_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\dummy.vcxproj">
+      <Project>{18C21689-6AFD-3A74-92C9-96DCE06A0CB1}</Project>
+      <Name>dummy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\libutil\dumpevts.vcxproj">
+      <Project>{35577BBE-7221-3203-8ABB-73EC04EDA09F}</Project>
+      <Name>dumpevts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\dynamorio.vcxproj">
+      <Project>{0992E199-066E-3EE1-8483-7F91B54518E3}</Project>
+      <Name>dynamorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\dynamorio_static.vcxproj">
+      <Project>{2640E20A-987E-347C-B352-6735E12E040E}</Project>
+      <Name>dynamorio_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\empty.vcxproj">
+      <Project>{02C19CFC-1667-3E80-8C82-FED2D8A6ACC7}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\histogram_launcher.vcxproj">
+      <Project>{2D77A8AB-DAAD-33B0-9E34-6E67F58130A2}</Project>
+      <Name>histogram_launcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\hot_bbcount.vcxproj">
+      <Project>{2C4EAB69-31F1-3670-9C56-DBAB00F1DD37}</Project>
+      <Name>hot_bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inc2add.vcxproj">
+      <Project>{4F23946E-083F-301C-BCBC-E85BF9A5361B}</Project>
+      <Name>inc2add</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inline.vcxproj">
+      <Project>{1C901495-3898-3DE4-8477-17E08A780178}</Project>
+      <Name>inline</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inscount.vcxproj">
+      <Project>{7BB0E98A-B2CE-3423-BDE8-D8781D977F96}</Project>
+      <Name>inscount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_simple.vcxproj">
+      <Project>{230E8274-4CCB-31FC-B78C-DAF3A57420F5}</Project>
+      <Name>instrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_x86_binary.vcxproj">
+      <Project>{76CEFE15-659D-3B87-AD45-314EA9D341A9}</Project>
+      <Name>instrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_x86_text.vcxproj">
+      <Project>{929F59BC-71D6-34F6-A2E8-D98154A7C659}</Project>
+      <Name>instrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrcalls.vcxproj">
+      <Project>{AFEC8FB8-A87A-38E1-AF89-53F394966C2D}</Project>
+      <Name>instrcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_simple.vcxproj">
+      <Project>{BAB0C3D2-ECD8-3AA9-A328-CB019DFC01B0}</Project>
+      <Name>memtrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_x86_binary.vcxproj">
+      <Project>{3C1C2C58-7AAB-3801-92B8-D8C6434F3A8C}</Project>
+      <Name>memtrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_x86_text.vcxproj">
+      <Project>{E85B12F9-E2CF-3944-962C-2A2328859E6D}</Project>
+      <Name>memtrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memval_simple.vcxproj">
+      <Project>{7B5FDDF8-714A-3C06-8C19-DB1BF04D9399}</Project>
+      <Name>memval_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\modxfer.vcxproj">
+      <Project>{A661232D-AD73-3A55-B9B6-A73E080AB299}</Project>
+      <Name>modxfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\modxfer_app2lib.vcxproj">
+      <Project>{4C0B4A7D-3843-329E-8BD1-61D2C83F4224}</Project>
+      <Name>modxfer_app2lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\core\ntdll_imports.vcxproj">
+      <Project>{FE059DC7-CE0B-39B7-ADC8-AC5F5270369D}</Project>
+      <Name>ntdll_imports</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\opcode_count.vcxproj">
+      <Project>{8BFEC869-0717-3236-96CB-C402D678F177}</Project>
+      <Name>opcode_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\opcode_mix_launcher.vcxproj">
+      <Project>{B013CC72-798B-3996-83A2-A14CB006330E}</Project>
+      <Name>opcode_mix_launcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\opcodes.vcxproj">
+      <Project>{2A6AB884-E309-35E4-B786-773B5B62E3EB}</Project>
+      <Name>opcodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\libutil\policy_static.vcxproj">
+      <Project>{73A84602-6B45-34A2-8691-9908B2F1AD37}</Project>
+      <Name>policy_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\prefetch.vcxproj">
+      <Project>{3A84AACF-CD25-3ED9-A713-648AE09E6FAF}</Project>
+      <Name>prefetch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\drcachesim\prefetch_analyzer_launcher.vcxproj">
+      <Project>{4BC8B991-5AA6-3D0F-8A39-8AD32334B405}</Project>
+      <Name>prefetch_analyzer_launcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\run_in_bg.vcxproj">
+      <Project>{CD1C3704-06BF-3B14-99A5-0B7448800D1B}</Project>
+      <Name>run_in_bg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\signal.vcxproj">
+      <Project>{C248D104-5A0B-32EE-A642-8C17C83A668E}</Project>
+      <Name>signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\stats.vcxproj">
+      <Project>{86547855-9E4A-37F3-8F39-7A47D5BD81E0}</Project>
+      <Name>stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\stl_test.vcxproj">
+      <Project>{03C86071-4961-38E5-B2FD-D1D05168AD7A}</Project>
+      <Name>stl_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\svccntrl.vcxproj">
+      <Project>{32D3A91B-7C11-3C10-BBD8-6DBABE40827B}</Project>
+      <Name>svccntrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\syscall.vcxproj">
+      <Project>{4756AC1D-B760-3FEB-B82D-511E2E25A873}</Project>
+      <Name>syscall</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\tracedump.vcxproj">
+      <Project>{89E8A35E-C1BC-35AB-B615-93EBDFA64F1D}</Project>
+      <Name>tracedump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\tools\winstats.vcxproj">
+      <Project>{B97FD24C-1683-34E7-8925-BE3F2078445A}</Project>
+      <Name>winstats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\clients\standalone\winsysnums.vcxproj">
+      <Project>{D75573D7-A82C-3BF9-BFD3-0B6B788093BF}</Project>
+      <Name>winsysnums</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\wrap.vcxproj">
+      <Project>{A3BF2352-0B00-3166-9F36-BA4368330DF3}</Project>
+      <Name>wrap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

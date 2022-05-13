@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drsyms/CMakeLists.txt
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drsyms/drsyms.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drsyms/libelftc-pecoff/lib32/dwarf.pdb
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drsyms/libelftc-pecoff/lib32/elftc.pdb
+D:/work/program/dynamorio-cronbuild-9.0.19117/make/policies.cmake

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\CMakeFiles\0a0c4c47885590a0e3dcb6a5e5cbde2a\drcachesim.dox.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\CMakeFiles\daf9d99950bb524a2a29e8a39b0a12b4\drcachesim_docs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\drcachesim\CMakeFiles\drcachesim_docs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{87A44096-60E3-381D-BB01-E2E7BD5EC42F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

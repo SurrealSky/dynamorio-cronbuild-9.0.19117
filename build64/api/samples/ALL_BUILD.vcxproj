@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7BF9C580-22E2-33FB-B886-42A05697E6E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build64;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\..\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/program/dynamorio-cronbuild-9.0.19117/api/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\MyProgram\cmake-3.23.1-windows-x86_64\bin\cmake.exe -SD:/work/program/dynamorio-cronbuild-9.0.19117 -BD:/work/program/dynamorio-cronbuild-9.0.19117/build64 --check-stamp-file D:/work/program/dynamorio-cronbuild-9.0.19117/build64/api/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\bbbuf.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\bbcount.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\bbsize.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\cbr.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\cbrtrace.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\countcalls.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\div.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\empty.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\hot_bbcount.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\inc2add.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\inline.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\inscount.cpp;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\instrace_simple.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\instrace_x86.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\instrcalls.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\memtrace_simple.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\memtrace_x86.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\memval_simple.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\modxfer.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\modxfer_app2lib.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\opcode_count.cpp;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\opcodes.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\prefetch.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\signal.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\stats.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\stl_test.cpp;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\syscall.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\tracedump.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\utils.c;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\utils.h;D:\work\program\dynamorio-cronbuild-9.0.19117\api\samples\wrap.c;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\CMakeLists-public.txt.in;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\cmake\DynamoRIOConfig.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\build64\cmake\DynamoRIOConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\ZERO_CHECK.vcxproj">
+      <Project>{8DDAC902-1195-325F-B6C2-6B3FCDD98C63}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbbuf.vcxproj">
+      <Project>{E97956FD-DA75-3F61-A3CC-4904127EB2DF}</Project>
+      <Name>bbbuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbcount.vcxproj">
+      <Project>{07A7D7C8-69B8-38D5-A125-ECC6CE9E7B51}</Project>
+      <Name>bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\bbsize.vcxproj">
+      <Project>{4D8182B5-3C92-32F5-8A6F-5217C4D8BE22}</Project>
+      <Name>bbsize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\cbr.vcxproj">
+      <Project>{1602F1EA-5761-3E2A-A9CC-FC916924F727}</Project>
+      <Name>cbr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\cbrtrace.vcxproj">
+      <Project>{2A217154-8A55-33CB-9380-C86C50ECB414}</Project>
+      <Name>cbrtrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\countcalls.vcxproj">
+      <Project>{BDF43661-6BE9-3509-8F18-D513CF673AF2}</Project>
+      <Name>countcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\div.vcxproj">
+      <Project>{30E9B0BD-E65D-3222-BDAA-8A3099367E3A}</Project>
+      <Name>div</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\empty.vcxproj">
+      <Project>{02C19CFC-1667-3E80-8C82-FED2D8A6ACC7}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\hot_bbcount.vcxproj">
+      <Project>{2C4EAB69-31F1-3670-9C56-DBAB00F1DD37}</Project>
+      <Name>hot_bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inc2add.vcxproj">
+      <Project>{4F23946E-083F-301C-BCBC-E85BF9A5361B}</Project>
+      <Name>inc2add</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inline.vcxproj">
+      <Project>{1C901495-3898-3DE4-8477-17E08A780178}</Project>
+      <Name>inline</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\inscount.vcxproj">
+      <Project>{7BB0E98A-B2CE-3423-BDE8-D8781D977F96}</Project>
+      <Name>inscount</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_simple.vcxproj">
+      <Project>{230E8274-4CCB-31FC-B78C-DAF3A57420F5}</Project>
+      <Name>instrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_x86_binary.vcxproj">
+      <Project>{76CEFE15-659D-3B87-AD45-314EA9D341A9}</Project>
+      <Name>instrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrace_x86_text.vcxproj">
+      <Project>{929F59BC-71D6-34F6-A2E8-D98154A7C659}</Project>
+      <Name>instrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\instrcalls.vcxproj">
+      <Project>{AFEC8FB8-A87A-38E1-AF89-53F394966C2D}</Project>
+      <Name>instrcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_simple.vcxproj">
+      <Project>{BAB0C3D2-ECD8-3AA9-A328-CB019DFC01B0}</Project>
+      <Name>memtrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_x86_binary.vcxproj">
+      <Project>{3C1C2C58-7AAB-3801-92B8-D8C6434F3A8C}</Project>
+      <Name>memtrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memtrace_x86_text.vcxproj">
+      <Project>{E85B12F9-E2CF-3944-962C-2A2328859E6D}</Project>
+      <Name>memtrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\memval_simple.vcxproj">
+      <Project>{7B5FDDF8-714A-3C06-8C19-DB1BF04D9399}</Project>
+      <Name>memval_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\modxfer.vcxproj">
+      <Project>{A661232D-AD73-3A55-B9B6-A73E080AB299}</Project>
+      <Name>modxfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\modxfer_app2lib.vcxproj">
+      <Project>{4C0B4A7D-3843-329E-8BD1-61D2C83F4224}</Project>
+      <Name>modxfer_app2lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\opcode_count.vcxproj">
+      <Project>{8BFEC869-0717-3236-96CB-C402D678F177}</Project>
+      <Name>opcode_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\opcodes.vcxproj">
+      <Project>{2A6AB884-E309-35E4-B786-773B5B62E3EB}</Project>
+      <Name>opcodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\prefetch.vcxproj">
+      <Project>{3A84AACF-CD25-3ED9-A713-648AE09E6FAF}</Project>
+      <Name>prefetch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\signal.vcxproj">
+      <Project>{C248D104-5A0B-32EE-A642-8C17C83A668E}</Project>
+      <Name>signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\stats.vcxproj">
+      <Project>{86547855-9E4A-37F3-8F39-7A47D5BD81E0}</Project>
+      <Name>stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\stl_test.vcxproj">
+      <Project>{03C86071-4961-38E5-B2FD-D1D05168AD7A}</Project>
+      <Name>stl_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\syscall.vcxproj">
+      <Project>{4756AC1D-B760-3FEB-B82D-511E2E25A873}</Project>
+      <Name>syscall</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\tracedump.vcxproj">
+      <Project>{89E8A35E-C1BC-35AB-B615-93EBDFA64F1D}</Project>
+      <Name>tracedump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build64\api\samples\wrap.vcxproj">
+      <Project>{A3BF2352-0B00-3166-9F36-BA4368330DF3}</Project>
+      <Name>wrap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

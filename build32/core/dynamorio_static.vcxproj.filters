@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\dynamo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\fragment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\fcache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\link.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\dispatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\emit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\stats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\perfctr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\vmareas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\rct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\hotpatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\hashtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\module_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\moduledb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\perscache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\nudge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\synch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\buildmark.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\loader_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\native_exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\instrument.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\module_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\translate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\annotations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\jit_opt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\arch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\emit_utils_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\emit_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\opnd_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\opnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\instr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instrlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\decode_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\encode_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\disassemble_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\disassemble.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\ir_utils_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\ir_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_fast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\interp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\proc_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\proc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\mangle_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\mangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\clean_call_opt_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\clean_call_opt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86_code.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\optimize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\sideline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\retcheck.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\eventlog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\os.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\syscall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\callback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drmarker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\inject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\inject_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\module_shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\native_pe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\diagnost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\aslr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\loader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\drwinapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\ntdll_redir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_redir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_proc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\rpcrt4_redir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\advapi32_redir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\x86.asm_core.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\resources.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{21D79301-274D-33CC-B455-CA96A7F9F30A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DD9509D3-ED1E-3626-8DFB-87A3A09EE15D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

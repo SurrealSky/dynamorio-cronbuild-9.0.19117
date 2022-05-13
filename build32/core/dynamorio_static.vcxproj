@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13010A01-888E-33FA-9136-6D2223BCECB6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>dynamorio_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\lib32\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dynamorio_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">dynamorio_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\core\drlibc;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS /Gs65536</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);RC_IS_CORE;INCLUDE_EVENTS;STATIC_LIBRARY;_X86_;DYNAMORIO_INTERNAL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;RC_IS_CORE;INCLUDE_EVENTS;STATIC_LIBRARY;_X86_;DYNAMORIO_INTERNAL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\core\drlibc;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\core\drlibc;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86;D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib;D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/work/program/dynamorio-cronbuild-9.0.19117/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\MyProgram\cmake-3.23.1-windows-x86_64\bin\cmake.exe -SD:/work/program/dynamorio-cronbuild-9.0.19117 -BD:/work/program/dynamorio-cronbuild-9.0.19117/build32 --check-stamp-file D:/work/program/dynamorio-cronbuild-9.0.19117/build32/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\core\annotations_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\proc_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\fragment_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\aarch64\instr_create_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\arm\instr_create_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\arm\opcode_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\decode_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\disassemble_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\dr_ir_opcodes.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\encode_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_create_shared_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_inline_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instrlist_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\opnd_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\instr_create_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\opcode_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_annotations.c;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_annotations.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_annotations_asm.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_events.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_inject.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_ir_utils.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\dr_tools.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\globals_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\mcxtx_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\module_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\core\os_api.h;D:\work\program\dynamorio-cronbuild-9.0.19117\make\CMake_events.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\make\policies.cmake;D:\work\program\dynamorio-cronbuild-9.0.19117\third_party\valgrind\memcheck.h;D:\work\program\dynamorio-cronbuild-9.0.19117\third_party\valgrind\valgrind.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\options.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\dynamo.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\fragment.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\fcache.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\link.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\dispatch.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\emit.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\utils.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /QIfist</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\config.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\stats.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\heap.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\monitor.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\perfctr.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\vmareas.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\rct.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\hotpatch.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\hashtable.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\module_list.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\moduledb.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\perscache.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\nudge.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\synch.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\buildmark.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\loader_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\io.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /QIfist</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\native_exec.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\instrument.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\lib\module_api.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\translate.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\annotations.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\jit_opt.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\arch.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\emit_utils_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\emit_utils.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\opnd_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\opnd.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instr_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\instr.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\instrlist.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\decode_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\encode_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\encode.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\disassemble_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\disassemble.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\ir_utils_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\ir_utils.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_table.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\ir\x86\decode_fast.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\interp.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\proc_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\proc.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\mangle_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\mangle.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\clean_call_opt_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\clean_call_opt.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86_code.c" />
+    <Object Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\x86.asm_core.obj" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\x86\optimize.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\sideline.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\arch\retcheck.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\eventlog.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\os.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\syscall.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\callback.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drmarker.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\ntdll.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\inject.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\inject_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\module.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\module_shared.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\native_pe.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\diagnost.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\aslr.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\loader.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\drwinapi.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\ntdll_redir.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_redir.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_proc.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_lib.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_mem.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_file.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_sync.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\kernel32_misc.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\rpcrt4_redir.c" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\drwinapi\advapi32_redir.c" />
+    <ResourceCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\core\win32\resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ZERO_CHECK.vcxproj">
+      <Project>{1699B210-BD8A-3D96-9963-CD0EC0DBD8E2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\api_headers.vcxproj">
+      <Project>{97B1F70A-2B76-3192-A13D-E6F2A62F473D}</Project>
+      <Name>api_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\drlibc.vcxproj">
+      <Project>{935399E9-8E96-35FE-8DC6-0C25C71BF5BF}</Project>
+      <Name>drlibc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\generate_events.vcxproj">
+      <Project>{686A8BF1-468D-3403-8F7F-E3A6FB5CB3AF}</Project>
+      <Name>generate_events</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\generate_syslog.vcxproj">
+      <Project>{1EC5C317-4866-3C73-8803-F53D9E7A0218}</Project>
+      <Name>generate_syslog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\generate_x86.asm_core.vcxproj">
+      <Project>{2F70FDE8-83CB-3D6E-9493-9D70A91A834B}</Project>
+      <Name>generate_x86.asm_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\core\ntdll_imports.vcxproj">
+      <Project>{76708C67-6E50-3852-807B-569D6A575AA1}</Project>
+      <Name>ntdll_imports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

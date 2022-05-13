@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\CMakeFiles\cf4772d5928b9ccf049fad364460ee81\dbghelp_imports.lib.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\CMakeFiles\de78eb437855e8f200a2c8add2a0b813\dbghelp_tgt.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\ext\drsyms\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\drsyms\CMakeFiles\dbghelp_tgt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{87A44096-60E3-381D-BB01-E2E7BD5EC42F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

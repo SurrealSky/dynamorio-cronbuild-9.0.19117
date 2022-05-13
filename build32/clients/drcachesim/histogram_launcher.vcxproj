@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F8FA97F-C804-38F6-8BD1-2646F941D13C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>histogram_launcher</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\bin32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">histogram_launcher.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">histogram_launcher</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\reader;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tracer;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4054</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;X86_32;WINDOWS;DR_HOST_X86;_X86_;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;X86_32;WINDOWS;DR_HOST_X86;_X86_;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\reader;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tracer;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\program\dynamorio-cronbuild-9.0.19117\build32;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\cmake\..\include;D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ext\include;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\reader;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tracer;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib32\release\drmemtrace_analyzer.lib;..\lib32\release\drmemtrace_histogram.lib;..\..\lib32\drfrontendlib.lib;..\lib32\release\directory_iterator.lib;..\..\lib32\drfrontendlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 /subsystem:console,5.01 /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/program/dynamorio-cronbuild-9.0.19117/build32/clients/lib32/release/histogram_launcher.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/program/dynamorio-cronbuild-9.0.19117/build32/clients/bin32/histogram_launcher.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/work/program/dynamorio-cronbuild-9.0.19117/clients/drcachesim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\MyProgram\cmake-3.23.1-windows-x86_64\bin\cmake.exe -SD:/work/program/dynamorio-cronbuild-9.0.19117 -BD:/work/program/dynamorio-cronbuild-9.0.19117/build32 --check-stamp-file D:/work/program/dynamorio-cronbuild-9.0.19117/build32/clients/drcachesim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\analysis_tool.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\analyzer.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common\memref.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common\trace_entry.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\common\utils.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\reader\reader.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\simulator\cache_simulator.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\simulator\cache_simulator_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\simulator\tlb_simulator_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\basic_counts_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\func_view_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\histogram_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\opcode_mix_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\reuse_distance_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\reuse_time_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\view_create.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tracer\drmemtrace.h;D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tracer\raw2trace.h;D:\work\program\dynamorio-cronbuild-9.0.19117\make\policies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\drcachesim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\histogram_launcher.cpp" />
+    <ClCompile Include="D:\work\program\dynamorio-cronbuild-9.0.19117\clients\drcachesim\tools\invariant_checker.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /FS</AdditionalOptions>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</BufferSecurityCheck>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">4100;4127;4054;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Sync</ExceptionHandling>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</MultiProcessorCompilation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MaxSpeed</Optimization>
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MultiThreaded</RuntimeLibrary>
+      <StringPooling Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</StringPooling>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</SuppressStartupBanner>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</TreatWarningAsError>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Level4</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\ZERO_CHECK.vcxproj">
+      <Project>{1699B210-BD8A-3D96-9963-CD0EC0DBD8E2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\api_headers.vcxproj">
+      <Project>{97B1F70A-2B76-3192-A13D-E6F2A62F473D}</Project>
+      <Name>api_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\drcachesim\directory_iterator.vcxproj">
+      <Project>{AE40A293-5EF0-3E30-A5DC-2D6C4EA50295}</Project>
+      <Name>directory_iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\libutil\drfrontendlib.vcxproj">
+      <Project>{24919772-E20C-3145-AB18-5E54AECA6DBF}</Project>
+      <Name>drfrontendlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\drcachesim\drmemtrace_analyzer.vcxproj">
+      <Project>{DD414ECF-8D7C-3D3F-B28B-14F42A029D62}</Project>
+      <Name>drmemtrace_analyzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\program\dynamorio-cronbuild-9.0.19117\build32\clients\drcachesim\drmemtrace_histogram.vcxproj">
+      <Project>{333D258E-2D95-3FA8-80A0-1384E39BA143}</Project>
+      <Name>drmemtrace_histogram</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

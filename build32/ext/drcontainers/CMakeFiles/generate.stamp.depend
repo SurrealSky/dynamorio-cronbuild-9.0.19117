@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drcontainers/CMakeLists.txt
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drcontainers/drtable.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drcontainers/drvector.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/ext/drcontainers/hashtable.h
+D:/work/program/dynamorio-cronbuild-9.0.19117/make/policies.cmake
